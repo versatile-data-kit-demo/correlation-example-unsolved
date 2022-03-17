@@ -1,15 +1,5 @@
 # VDK installation
-quickstart-vdk
 vdk-trino
-
-# Necessary for sql in jupyter
-ipython-sql
-jupyterlab_sql
-
-# Other
-streamlit
-jupyter-server-proxy
-nbserverproxy
 
 # Necessary for data job
 beautifulsoup4==4.10.0
