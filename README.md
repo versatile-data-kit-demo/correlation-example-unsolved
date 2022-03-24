@@ -111,4 +111,4 @@ You also created an interactive Streamlit dashboard which showcased the relation
 **Congrats!**
 
 
-[> Go back to main page of the Workshop.](https://github.com/versatile-data-kit-amld/workshop/blob/main/README.md#covid-vs-no-scent-complaints)
+**[> Go back to main page of the Workshop.](https://github.com/versatile-data-kit-amld/workshop/blob/main/README.md#covid-vs-no-scent-complaints)**
