@@ -34,7 +34,7 @@ def run(job_input: IJobInput):
         ORDER BY Date
         """
     )
-    df = # <- !!! CONVERT THE reviews_raw OBJECT INTO A PANDAS DATAFRAME THROUGH pd.DataFrame(). NAME THE COLUMNS 'date' AND 'review' !!!
+    df = # <- !!! CONVERT THE reviews_raw OBJECT INTO A PANDAS DATAFRAME THROUGH pd.DataFrame(). NAME THE COLUMNS "date" AND "review" !!!
 
     # If any data is returned, transform
     if len(df) > 0:
@@ -58,7 +58,7 @@ def run(job_input: IJobInput):
         job_input.send_tabular_data_for_ingestion(
             rows=df_group.values,
             column_names=df_group.columns.to_list(),
-            destination_table= # <- !!! ENTER HERE THE NAME OF THE TABLE WE CREATED IN SCRIPT "03_create_yankee_candle_reviews_transformed.sql" !!!
+            destination_table="" # <- !!! ENTER BETWEEN THE QUOTES THE NAME OF THE TABLE WE CREATED IN SCRIPT "03_create_yankee_candle_reviews_transformed.sql" !!!
         )
         # Reset the last_date property value to the latest date in the transformed db table
         props["last_date_amazon_transformed"] = # <- !!! ASSIGN THE MAXIMUM DATE FROM df_group TO THE last_date_amazon_transformed PROPERTY !!!
