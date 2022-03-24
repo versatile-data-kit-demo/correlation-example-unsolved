@@ -110,4 +110,7 @@ You also created an interactive Streamlit dashboard which showcased the relation
 
 **Congrats!**
 
-*Author of the example scenario: [Desislava Valkova](https://www.linkedin.com/in/desislava-valkova)*
+
+## Authored By
+
+[Versatile Data Kit Team](https://github.com/vmware/versatile-data-kit/wiki/Introduction)
