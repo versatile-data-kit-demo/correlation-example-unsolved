@@ -63,7 +63,7 @@ st.header('Weekly correlation between "no scent" reviews and covid cases')
 
 # Current period correlation
 corr_coeff = pd.to_numeric(df[df['date']==max(df['date'])]['correlation_coeff'], errors='coerce')
-st.metric("The current correlation coefficient is:", corr_coeff)
+st.metric("The current correlation coefficient is:", round(corr_coeff,3))
 
 # Plot the correlation coefficients over time
 st.write('Correlation coefficient over time:')
