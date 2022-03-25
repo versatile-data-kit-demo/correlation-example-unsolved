@@ -84,6 +84,11 @@ vdk deploy
 ## Exercises
 Please open the following MyBinder to get started on the exercises:
 
+A few tips: 
+ - It's very good idea to fork this repo before opening MyBinder. This way later you may be able to commit/push your changes into your fork.
+ - The mybinder notebook has a idle timeout of 10 minutes. One trick to prevent it after launching, open terminal and execute `while echo "foo"; do sleep 100 ; done`
+ 
+
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/versatile-data-kit-amld/correlation-example-unsolved/HEAD?urlpath=lab/tree/setup.ipynb)
 
 If you have any issue with above link try 
