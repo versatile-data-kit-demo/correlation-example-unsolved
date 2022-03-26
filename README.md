@@ -91,7 +91,7 @@ A few tips:
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/versatile-data-kit-amld/correlation-example-unsolved/HEAD?urlpath=lab/tree/setup.ipynb)
 
 If you have any issue with above link try 
- - [First backup link](https://ovh.mybinder.org/v2/gh/versatile-data-kit-amld/correlation-example-unsolved/HEAD?urlpath=lab/tree/setup.ipynb)
+ - [First backup link](http://a1a89deb4a79f44279c470dada8dab7f-727617251.us-west-1.elb.amazonaws.com/v2/gh/versatile-data-kit-amld/correlation-example-unsolved/HEAD?urlpath=lab/tree/setup.ipynb)
  - [Second backup link](https://gesis.mybinder.org/v2/gh/versatile-data-kit-amld/correlation-example-unsolved/HEAD?urlpath=lab/tree/setup.ipynb)
 
 
