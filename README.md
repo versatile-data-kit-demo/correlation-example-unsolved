@@ -1,7 +1,7 @@
 # Correlation between COVID cases in the US and reviews of Yankee candles indicating "no scent" 
 
 ## Introduction
-This example was inspired by [this Twitter post](https://twitter.com/zornsllama/status/1473575508784955394?s=21) and investigates whether statistically there's a relationship between weekly COVID cases in the US and critical "no scent" US Amazon reviews for one of the most popular [Yankee candles on Amazon](https://www.amazon.com/Yankee-Candle-Large-Balsam-Cedar/dp/B000JDGC78/ref=cm_cr_arp_d_product_top?ie=UTF8).
+This example was inspired by [a Twitter post](https://twitter.com/zornsllama/status/1473575508784955394?s=21) and investigates whether statistically there's a relationship between weekly COVID cases in the US and critical "no scent" US Amazon reviews for one of the most popular [Yankee candles on Amazon](https://www.amazon.com/Yankee-Candle-Large-Balsam-Cedar/dp/B000JDGC78/ref=cm_cr_arp_d_product_top?ie=UTF8).
 
 The example uses the functionalities of VDK to create, automate and execute on schedule the program that ingests the raw data into a database, performs transformations and builds a Streamlit dashboard to showcase the results.
 
@@ -20,7 +20,6 @@ The Amazon reviews are fetched through webscraping with the help of the [Beautif
 
 ## Purpose
 The purpose of this scenario is to:
-* Build upon what was already covered in scenario 1 and 2.
 * Publish extracted data to a configured DB in an incremental fashion (i.e. not ingest records that are already present in the tables).
 * Read data from а DB.
 * Perform data cleaning.
@@ -40,6 +39,7 @@ Correlation coefficients range in values between -1 and 1, where:
 * **1 indicates a strong positive relationship** - for every positive increase in one variable, there is a positive increase of a fixed proportion in the other. For example, shoe sizes go up in (almost) perfect correlation with foot length.
 * **-1 indicates a strong negative relationship** - for every positive increase in one variable, there is a negative decrease of a fixed proportion in the other. For example, the amount of gas in a tank decreases in (almost) perfect correlation with speed.
 * **0 indicates no relationship at all** - for every unit of increase in one variable, there isn’t any positive or negative change in the other. The two events just aren’t related.
+
 The absolute value of the correlation coefficient gives us the relationship strength. The larger the number, the stronger the relationship. For example, |-0.75| = 0.75, which has a stronger relationship than 0.65.
 
 The most widely used correlation coefficient is the **Pearson correlation coefficient** which shows the linear relationship between two sets of data. It is the ratio between the covariance of two variables and the product of their standard deviations:
@@ -51,7 +51,7 @@ Versatile Data Kit is a data engineering framework that enables data engineers t
 
 The full VDK project could be found in [this Github repository](https://github.com/vmware/versatile-data-kit).
 
-#### Create a Data Job
+#### 1. Create a Data Job:
 ```
 vdk create -n hello-world -t my-team
 ```
@@ -59,7 +59,7 @@ When you run this command through a terminal, it will create a data job locally 
 
 In this example, the mybinder environment in which you will be developing also has Control Service installed (i.e. the feature responsible for saving data job state and scheduling the job for automatic execution). This means that when a data job is created, it will also be registered/created in the cloud. In this case, each data job needs to have a unique name.
 
-#### Data Job Code
+#### 2. Data Job Code
 Once created, the data job directory will be automatically populated with some files:
 * SQL files (.sql) - called SQL steps - they are directly executed as queries against your configured database;
 * Python files (.py) - called Python steps - they are Python scripts which contain a run function that takes as an argument the VDK's job_input object;
@@ -75,7 +75,7 @@ To run the Data Job locally from a terminal:
 vdk run <path to Data Job directory>
 ```
 
-#### Deploy a Data Job
+#### 3. Deploy a Data Job
 When a job is ready to be productionized, it can be deployed in the Versatile Data Kit runtime (cloud). To do this, run the command below in a terminal and follow the instructions (you can see the deploy options with `vdk deploy --help`):
 ```
 vdk deploy
@@ -83,23 +83,22 @@ vdk deploy
 
 ## Exercises
 Please open the following MyBinder to get started on the exercises:
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/versatile-data-kit-amld/correlation-example-unsolved/276a7722d282d6e11e058b8b30ac60b35543bca9?urlpath=lab%2Ftree%2Fsetup.ipynb)
 
 A few tips: 
- - The mybinder notebook has a idle timeout of 10 minutes. One trick to prevent it after launching, open terminal and execute `while echo "foo"; do sleep 100 ; done`
- 
+ - The mybinder notebook has idle timeout of 10 minutes. One trick to prevent timeout after launching is to open a terminal and execute: `while echo "foo"; do sleep 100; done`
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/versatile-data-kit-amld/correlation-example-unsolved/HEAD?urlpath=lab/tree/setup.ipynb)
 
-If you have any issue with above link try 
+If you have any issue with the above link, please try:
  - [First backup link](http://a1a89deb4a79f44279c470dada8dab7f-727617251.us-west-1.elb.amazonaws.com/v2/gh/versatile-data-kit-amld/correlation-example-unsolved/HEAD?urlpath=lab/tree/setup.ipynb)
  - [Second backup link](https://gesis.mybinder.org/v2/gh/versatile-data-kit-amld/correlation-example-unsolved/HEAD?urlpath=lab/tree/setup.ipynb)
 
 
-You can find the *solved* MyBinder environment [here](https://mybinder.org/v2/gh/versatile-data-kit-amld/correlation-example-solved/HEAD?urlpath=lab/tree/setup.ipynb)
+You can find the *solved* MyBinder environment [here](https://mybinder.org/v2/gh/versatile-data-kit-amld/correlation-example-solved/HEAD?urlpath=lab/tree/setup.ipynb).
 
 
 
-For more information on MyBinder, please visit: https://mybinder.readthedocs.io 
+For more information on MyBinder, please visit: https://mybinder.readthedocs.io
 
 ## Lessons Learned
 In this scenario you created a data job which:
@@ -114,5 +113,7 @@ You also created an interactive Streamlit dashboard which showcased the relation
 
 **Congrats!**
 
+You've reached the end of this workshop.
 
-**[> Go back to main page of the Workshop.](https://github.com/versatile-data-kit-amld/workshop/blob/main/README.md#covid-vs-no-scent-complaints)**
+
+**[> Go back to the main page](https://github.com/versatile-data-kit-amld/workshop/blob/main/README.md#covid-vs-no-scent-complaints)**
