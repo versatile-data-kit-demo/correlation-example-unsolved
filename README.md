@@ -116,4 +116,4 @@ You also created an interactive Streamlit dashboard which showcased the relation
 You've reached the end of this workshop.
 
 
-**[> Go back to the main page](https://github.com/versatile-data-kit-amld/workshop/blob/main/README.md#covid-vs-no-scent-complaints)**
+**[> Go back to the main page](https://github.com/vmware/versatile-data-kit/tree/main/events/openfest)**
