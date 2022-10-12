@@ -83,15 +83,15 @@ vdk deploy
 
 ## Exercises
 Please open the following MyBinder to get started on the exercises:
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/versatile-data-kit-amld/correlation-example-unsolved/276a7722d282d6e11e058b8b30ac60b35543bca9?urlpath=lab%2Ftree%2Fsetup.ipynb)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/versatile-data-kit-demo/correlation-example-unsolved/HEAD?labpath=setup.ipynb)
 
 A few tips: 
  - The mybinder notebook has idle timeout of 10 minutes. One trick to prevent timeout after launching is to open a terminal and execute: `while echo "foo"; do sleep 100; done`
 
 
 If you have any issue with the above link, please try:
- - [First backup link](http://a1a89deb4a79f44279c470dada8dab7f-727617251.us-west-1.elb.amazonaws.com/v2/gh/versatile-data-kit-amld/correlation-example-unsolved/HEAD?urlpath=lab/tree/setup.ipynb)
- - [Second backup link](https://gesis.mybinder.org/v2/gh/versatile-data-kit-amld/correlation-example-unsolved/HEAD?urlpath=lab/tree/setup.ipynb)
+ - [First backup link](http://a1a89deb4a79f44279c470dada8dab7f-727617251.us-west-1.elb.amazonaws.com/v2/gh/versatile-data-kit-demo/correlation-example-unsolved/HEAD?urlpath=lab/tree/setup.ipynb)
+ - [Second backup link](https://gesis.mybinder.org/v2/gh/versatile-data-kit-demo/correlation-example-unsolved/HEAD?urlpath=lab/tree/setup.ipynb)
 
 
 You can find the *solved* MyBinder environment [here](https://mybinder.org/v2/gh/versatile-data-kit-amld/correlation-example-solved/HEAD?urlpath=lab/tree/setup.ipynb).
@@ -115,5 +115,6 @@ You also created an interactive Streamlit dashboard which showcased the relation
 
 You've reached the end of this workshop.
 
+Please share your feedback : https://bit.ly/vdk-openfest
 
-**[> Go back to the main page](https://github.com/versatile-data-kit-amld/workshop/blob/main/README.md#covid-vs-no-scent-complaints)**
+**[> Go back to the main page](https://github.com/vmware/versatile-data-kit/tree/main/events/openfest)**
