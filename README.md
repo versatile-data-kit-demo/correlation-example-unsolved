@@ -115,5 +115,6 @@ You also created an interactive Streamlit dashboard which showcased the relation
 
 You've reached the end of this workshop.
 
+Please share your feedback : https://bit.ly/vdk-openfest
 
 **[> Go back to the main page](https://github.com/vmware/versatile-data-kit/tree/main/events/openfest)**
