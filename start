@@ -1,11 +1,11 @@
 #!/bin/bash
 
-export VDK_API_TOKEN=FQue3EehGQUKIwMJ5hlxwjrYL0j9BfigV87R2QbQXzrpEba1dOwbbrHax11Q3O98
+export VDK_API_TOKEN=92uYCauN7eDC35V-AzQARSOIOOFq8lVsfIr1hkpN1n6e-I1ElihOA9i4ShMG3LA4
 export VDK_CONTROL_SERVICE_REST_API_URL=https://iaclqhm5xk.execute-api.us-west-1.amazonaws.com
 export VDK_API_TOKEN_AUTHORIZATION_URL=https://console-stg.cloud.vmware.com/csp/gateway/am/api/auth/api-tokens/authorize
 
-export DATABASE_URL=trino://user@a60c369ea7ece4c73b3ac15cb64a7d30-1152784645.us-west-1.elb.amazonaws.com:1094/mysql
-export VDK_TRINO_HOST=a60c369ea7ece4c73b3ac15cb64a7d30-1152784645.us-west-1.elb.amazonaws.com
+export DATABASE_URL=trino://user@aa9845eb53d7c45fbaf0667e64ba5406-556859698.us-west-1.elb.amazonaws.com:1094/mysql
+export VDK_TRINO_HOST=aa9845eb53d7c45fbaf0667e64ba5406-556859698.us-west-1.elb.amazonaws.com
 export VDK_TRINO_PORT=1094
 export VDK_TRINO_USE_SSL=False
 
@@ -13,6 +13,6 @@ export VDK_DB_DEFAULT_TYPE=TRINO
 export VDK_INGEST_METHOD_DEFAULT=trino
 export VDK_TRINO_CATALOG=mysql
 export VDK_TRINO_SCHEMA=default
-export VDK_INGEST_TARGET_DEFAULT=trino://user@a60c369ea7ece4c73b3ac15cb64a7d30-1152784645.us-west-1.elb.amazonaws.com:1094/mysql
+export VDK_INGEST_TARGET_DEFAULT=trino://user@aa9845eb53d7c45fbaf0667e64ba5406-556859698.us-west-1.elb.amazonaws.com:1094/mysql
 
 exec "$@"
