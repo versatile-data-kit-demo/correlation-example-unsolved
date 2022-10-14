@@ -94,9 +94,9 @@ def run(job_input: IJobInput):
     # Ingest the dataframe into a SQLite database using VDK's job_input method (if any results are fetched)
     if len(df) > 0:
         job_input.send_tabular_data_for_ingestion(
-            rows=, # <- !!! ENTER HERE THE VALUES THAT WILL BE INSERTED INTO THE ROWS OF THE TABLE !!!
-            column_names=, # <- !!! ENTER HERE THE COLUMNS NAMES USING THE SAME COLUMN NAMES AS IN THE REVIEWS DATA FRAME !!!
-            destination_table="" # <- !!! ENTER BETWEEN THE QUOTES THE NAME OF THE TABLE WE CREATED IN SCRIPT "02_create_yankee_candle_reviews.sql" !!!
+            rows=df.values, # <- !!! ENTER HERE THE VALUES THAT WILL BE INSERTED INTO THE ROWS OF THE TABLE !!!
+            column_names=df.columns.to_list(), # <- !!! ENTER HERE THE COLUMNS NAMES USING THE SAME COLUMN NAMES AS IN THE REVIEWS DATA FRAME !!!
+            destination_table=f"{props['prefix']}_yankee_candle_reviews"
         )
         # Reset the last_date property value to the latest date in the amazon source db table
         props["last_date_amazon"] = max(df['Date'])

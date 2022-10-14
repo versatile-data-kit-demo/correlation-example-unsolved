@@ -24,6 +24,12 @@ def run(job_input: IJobInput):
     # If the property does not exist, set it to "2020-01-01" (first ingested date).
     
     # !!! COMPLETE THE PROPERTIES DEFINITION FOR last_date_amazon_transformed DATA JOB PROPERTY !!!
+    props = job_input.get_all_properties()
+    if "last_date_amazon_transformed" in props:
+        pass
+    else:
+        props["last_date_amazon_transformed"] = 
+
 
     # Read the candle review data from the cloud Trino DB and transform it into a df
     reviews_raw = job_input.execute_query(
@@ -58,7 +64,7 @@ def run(job_input: IJobInput):
         job_input.send_tabular_data_for_ingestion(
             rows=df_group.values,
             column_names=df_group.columns.to_list(),
-            destination_table="" # <- !!! ENTER BETWEEN THE QUOTES THE NAME OF THE TABLE WE CREATED IN SCRIPT "03_create_yankee_candle_reviews_transformed.sql" !!!
+            destination_table=f"" # <- !!! ENTER BETWEEN THE QUOTES THE NAME OF THE TABLE WE CREATED IN SCRIPT "03_create_yankee_candle_reviews_transformed.sql" !!!
         )
         # Reset the last_date property value to the latest date in the transformed db table
         props["last_date_amazon_transformed"] = # <- !!! ASSIGN THE MAXIMUM DATE FROM df_group TO THE last_date_amazon_transformed PROPERTY !!!

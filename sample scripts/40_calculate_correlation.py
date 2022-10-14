@@ -34,7 +34,7 @@ def run(job_input: IJobInput):
     reviews = job_input.( # <- !!! BEFORE THE ( ENTER THE APPROPRIATE JOB_INPUT METHOD FOR EXECUTING SQL STATEMENTS FROM PYTHON SCRIPTS !!!
         f"""
         SELECT date, num_no_scent_reviews 
-        FROM !!! ENTER HERE THE NAME OF THE TABLE WE POPULATED IN SCRIPT "30_transform_amazon_reviews.py" !!!
+        FROM {prefix}_yankee_candle_reviews_transformed
         """
     )
     reviews_df = pd.DataFrame(reviews, columns=['date', 'num_no_scent_reviews'])
@@ -87,7 +87,7 @@ def run(job_input: IJobInput):
         job_input.send_tabular_data_for_ingestion(
             rows=df_merged_weekly.values,
             column_names=df_merged_weekly.columns.to_list(),
-            destination_table="" # <- !!! ENTER BETWEEN THE QUOTES THE NAME OF THE TABLE WE CREATED IN SCRIPT "04_create_weekly_correlation.sql" !!!
+            destination_table=f"" # <- !!! ENTER BETWEEN THE QUOTES THE NAME OF THE TABLE WE CREATED IN SCRIPT "04_create_weekly_correlation.sql" !!!
         )
         # Reset the last_date property value to the latest date in the covid source db table
         props["last_date_correlation"] = max(df_merged_weekly['date'])
