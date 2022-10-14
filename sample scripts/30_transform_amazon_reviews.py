@@ -26,10 +26,9 @@ def run(job_input: IJobInput):
     # !!! COMPLETE THE PROPERTIES DEFINITION FOR last_date_amazon_transformed DATA JOB PROPERTY !!!
     props = job_input.get_all_properties()
     if "last_date_amazon_transformed" in props:
-        pass
+         ...
     else:
-        props["last_date_amazon_transformed"] = 
-
+        ...
 
     # Read the candle review data from the cloud Trino DB and transform it into a df
     reviews_raw = job_input.execute_query(
