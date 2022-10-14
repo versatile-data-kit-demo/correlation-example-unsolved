@@ -83,10 +83,7 @@ vdk deploy
 
 ## Exercises
 Please open the following MyBinder to get started on the exercises:
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/versatile-data-kit-demo/correlation-example-unsolved/HEAD?labpath=setup.ipynb)
-
-A few tips: 
- - The mybinder notebook has idle timeout of 10 minutes. One trick to prevent timeout after launching is to open a terminal and execute: `while echo "foo"; do sleep 100; done`
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/versatile-data-kit-demo/correlation-example-unsolved/HEAD?urlpath=lab/tree/setup.ipynb)
 
 
 If you have any issue with the above link, please try: 
