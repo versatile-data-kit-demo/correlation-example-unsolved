@@ -2,7 +2,7 @@
 -- Table naming convention: prefix + _ + yankee_candle_reviews 
 
 
-CREATE TABLE IF NOT EXISTS /*!!! ENTER THE NAME OF THE TABLE HERE !!!*/ (
+CREATE TABLE IF NOT EXISTS {prefix}_yankee_candle_reviews (
     Date VARCHAR,
     Review VARCHAR
 )
