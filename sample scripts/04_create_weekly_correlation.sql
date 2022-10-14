@@ -8,5 +8,8 @@ Construct the CREATE TABLE statement by yourself with the following columns and 
  - correlation_coeff with type REAL: this will contain the correlation coefficients for the given week */
  
 CREATE TABLE IF NOT EXISTS /*!!! ENTER THE NAME OF THE TABLE HERE !!!*/ (
-    /*!!! ENTER THE NAMES OF THE 4 COLUMNS AND THEIR DATA TYPES USING THE SAME SYNTAX AS IN SCRIPTS 01-03 !!!*/
+    date VARCHAR,
+    num_no_scent_reviews INTEGER,
+    number_of_covid_cases_weekly INTEGER,
+    correlation_coeff REAL
 )
