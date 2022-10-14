@@ -34,7 +34,7 @@ def run(job_input: IJobInput):
     reviews = job_input.( # <- !!! BEFORE THE ( ENTER THE APPROPRIATE JOB_INPUT METHOD FOR EXECUTING SQL STATEMENTS FROM PYTHON SCRIPTS !!!
         f"""
         SELECT date, num_no_scent_reviews 
-        FROM {prefix}_yankee_candle_reviews_transformed
+        FROM {props['prefix']}_yankee_candle_reviews_transformed
         """
     )
     reviews_df = pd.DataFrame(reviews, columns=['date', 'num_no_scent_reviews'])
