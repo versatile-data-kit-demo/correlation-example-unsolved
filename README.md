@@ -33,7 +33,7 @@ The purpose of this scenario is to:
 ### Correlation
 If you feel comfortable with the concept of Correlation and its calculation, please feel free to skip to the next section.
 
-Correlation is a statistical term describing the degree to which two variables move in coordination with one another. Correlation coefficients are used as measures indicating the strength of the relationship between 2 variables. Correlation is used in predictive modelling to investigate the multicollinearity between predictors (as shown in the first scenario with linear regression) and also as an independent analysis to track relationships between variables.
+Correlation is a statistical term describing the degree to which two variables move in coordination with one another. Correlation coefficients are used as measures indicating the strength of the relationship between 2 variables. Correlation is used in predictive modelling to investigate the multicollinearity between predictors  and also as an independent analysis to track relationships between variables.
 
 Correlation coefficients range in values between -1 and 1, where:
 * **1 indicates a strong positive relationship** - for every positive increase in one variable, there is a positive increase of a fixed proportion in the other. For example, shoe sizes go up in (almost) perfect correlation with foot length.
