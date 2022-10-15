@@ -87,7 +87,8 @@ Please open the following MyBinder to get started on the exercises:
 
 
 If you have any issue with the above link, please try: 
- - [First backup link](https://gesis.mybinder.org/v2/gh/versatile-data-kit-demo/correlation-example-unsolved/HEAD?urlpath=lab/tree/setup.ipynb)
+ - [First backup link](https://ovh.mybinder.org/v2/gh/versatile-data-kit-demo/correlation-example-unsolved/HEAD?urlpath=lab/tree/setup.ipynb)
+ - [Second backup link](https://gesis.mybinder.org/v2/gh/versatile-data-kit-demo/correlation-example-unsolved/HEAD?urlpath=lab/tree/setup.ipynb)
 
 
 You can find the *solved* MyBinder environment [here](https://github.com/versatile-data-kit-demo/correlation-example-solved).
