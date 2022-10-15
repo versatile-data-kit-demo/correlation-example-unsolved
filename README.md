@@ -95,6 +95,10 @@ If you have any issue with the above link, please try:
  - [Second backup link](https://gesis.mybinder.org/v2/gh/versatile-data-kit-demo/correlation-example-unsolved/HEAD?urlpath=lab/tree/setup.ipynb)
 
 
+
+![binder](https://user-images.githubusercontent.com/2536458/195982261-1b1962d3-005f-4cf5-8103-d034760bb33b.png)
+
+
 You can find the *solved* MyBinder environment [here](https://github.com/versatile-data-kit-demo/correlation-example-solved).
 
 
