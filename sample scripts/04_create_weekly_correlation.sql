@@ -1,4 +1,4 @@
-/* Create a table that will store the weekly aggreagted data and correlation coefficients.
+-- Create a table that will store the weekly aggreagted data and correlation coefficients.
 -- Table naming convention: prefix + _ + weekly_correlation 
 
  
