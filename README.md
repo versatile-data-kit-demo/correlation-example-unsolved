@@ -1,6 +1,10 @@
 # Correlation between COVID cases in the US and reviews of Yankee candles indicating "no scent" 
 
 ## Introduction
+
+<img width="960" alt="image" src="https://user-images.githubusercontent.com/2536458/195982198-63b159ea-87bb-475a-9299-2448b9a5ebdb.png">
+
+
 This example was inspired by [a Twitter post](https://twitter.com/zornsllama/status/1473575508784955394?s=21) and investigates whether statistically there's a relationship between weekly COVID cases in the US and critical "no scent" US Amazon reviews for one of the most popular [Yankee candles on Amazon](https://www.amazon.com/Yankee-Candle-Large-Balsam-Cedar/dp/B000JDGC78/ref=cm_cr_arp_d_product_top?ie=UTF8).
 
 The example uses the functionalities of VDK to create, automate and execute on schedule the program that ingests the raw data into a database, performs transformations and builds a Streamlit dashboard to showcase the results.
